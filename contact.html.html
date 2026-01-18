@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Delicious Bites</title>
+    <!-- Include styles -->
+</head>
+<body>
+    <header>
+        <h1>Delicious Bites Restaurant</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <section>
+        <h2>Contact Us</h2>
+        <p>Address: 123 Main St, City, State 12345</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@deliciousbites.com</p>
+        <h3>Make a Reservation</h3>
+        <form id="reservationForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="tel" id="phone" placeholder="Your Phone" required>
+            <input type="date" id="date" required>
+            <input type="time" id="time" required>
+            <textarea id="message" placeholder="Special Requests" rows="4"></textarea>
+            <button type="submit">Submit Reservation</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Delicious Bites Restaurant. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('reservationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Reservation submitted! We\'ll contact you soon. (This is a demo; in a real site, data would be sent to a server.)');
+            // In a real app, send data to backend (e.g., via fetch to an API).
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; }
+        header { background-color: #d2691e; color: white; text-align: center; padding: 2rem; }
+        nav { background-color: #8b4513; padding: 1rem; text-align: center; }
+        nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        section { padding: 2rem; max-width: 1200px; margin: auto; }
+        .hero { background-image: url('https://via.placeholder.com/1200x400?text=Restaurant+Hero+Image'); background-size: cover; height: 400px; display: flex; align-items: center; justify-content: center; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
+        .menu-item { background: white; border: 1px solid #ddd; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+        .menu-item img { width: 100%; height: 200px; object-fit: cover; }
+        .gallery { display: flex; flex-wrap: wrap; gap: 1rem; }
+        .gallery img { width: 300px; height: 200px; object-fit: cover; }
+        form { background: white; padding: 2rem; border: 1px solid #ddd; box-shadow: 0 2px 5px rgba(0,0,0,0.1); max-width: 600px; margin: auto; }
+        form input, form textarea, form button { display: block; width: 100%; margin: 0.5rem 0; padding: 0.5rem; }
+        form button { background-color: #d2691e; color: white; border: none; cursor: pointer; }
+        form button:hover { background-color: #a0522d; }
+        footer { background-color: #333; color: white; text-align: center; padding: 1rem; }
+        @media (max-width: 768px) { .menu-grid { grid-template-columns: 1fr; } .gallery img { width: 100%; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Bites Restaurant</h1>
+        <p>Fresh Ingredients, Unforgettable Flavors</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <!-- Homepage Content -->
+    <section class="hero">
+        <div>
+            <h2>Welcome to Delicious Bites</h2>
+            <p>Open daily for breakfast, lunch, and dinner. Reserve your table now!</p>
+        </div>
+    </section>
+    <section id="home">
+        <h2>Featured Dishes</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/300x200?text=Signature+Pasta" alt="Signature Pasta">
+                <h3>Signature Pasta</h3>
+                <p>Homemade pasta with seasonal vegetables and truffle oil. $15</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/300x200?text=Grilled+Steak" alt="Grilled Steak">
+                <h3>Grilled Steak</h3>
+                <p>Prime cut with herb butter and roasted potatoes. $25</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/300x200?text=Chocolate+Cake" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Decadent dessert with raspberry coulis. $8</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x200?text=Dining+Area" alt="Dining Area">
+            <img src="https://via.placeholder.com/300x200?text=Kitchen" alt="Kitchen">
+            <img src="https://via.placeholder.com/300x200?text=Outdoor+Seating" alt="Outdoor Seating">
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Delicious Bites Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
